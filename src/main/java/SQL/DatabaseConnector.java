@@ -9,9 +9,9 @@ public class DatabaseConnector {
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/MyDatabase",
+                "url",
                 "postgres",
-                "Alimardan");
+                "password");
     }
 
     public static void createTable() {
